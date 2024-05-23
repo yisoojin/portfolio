@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>woongin group</title>
+
+    <link rel="stylesheet" href="./style.css/reset.css">
+    <link rel="stylesheet" href="./style.css/main.css">
+    <link rel="stylesheet" href="./style.css/com.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="./js/./jquery-3.7.1.js"></script>
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/EasePack.min.js"></script>
+
+</head>
+
+
+
+<body>
+    
+    <header>
+
+        <div class="hWrap">
+            
+            <h1>
+                <a href="#">
+                    <img src="./images/woongin_logo_w.png" class="mo">
+                    <img src="./images/woongin_logo_color.svg" class="pc">
+
+                </a>
+            </h1>
+            <!--LOGO-->
+
+
+            <button class="m_btn">
+                <img src="./images/menu_white.png" alt="mobile menu">
+            </button>
+            <!--mobile menu(햄버거)-->
+
+            <aside>
+
+                <div class="aside_header">
+
+                    <button class="close_btn">
+                        <img src="./images/close_green.png" alt="close">
+                    </button>
+                    <!--close버튼-->
+    
+                    <form class="search">
+                            <input type="text">
+                            
+                            <div class="search_btn">
+                                <img src="./images/seach_green.png">
+                            </div>
+                    </form>
+                    <!--서치창-->
+
+
+
+                <div class="search_aside">
+
+                    <div class="search_aside_bg">
+
+                        <div class="close">
+                            <h5>닫기</h5>
+                            <img src="./images/close_green.png" alt="close">
+                        </div>
+                        <!--닫기버튼-->
+
+                        <form class="a_search">
+                            <input type="text">
+                            <button>
+                                <img src="./images/seach_green.png" alt="search">
+                            </button>
+                        </form>
+                        <!--검색창-->
+
+                        <div class="search_box">
+                            
+                            <div class="recently">
+                                <h5>검색 히스토리</h5>
+                                <span></span>
+                            </div>
+                            <!--최근검색어-->
+
+                            
+                            <div class="recommend">
+                                <h5>추천 검색어</h5>
+                                <span class="recommend_span">웅진 경영정신</span>
+                                <span class="recommend_span">웅진 지속가능경영</span>
+                                <span class="recommend_span">또또사랑</span>
+                                <span class="recommend_span">웅진씽크빅</span>
+                                <span class="recommend_span">웅진 인사철학</span>
+                            </div>
+                            <!--추천검색어-->
+
+                        </div>
+                        <!--최근,추천검색어-->
+
+                        <div class="recently_delete">
+                            <h5>검색 히스토리 모두 지우기</h5>
+                            <!-- <img src="" class="delete"> -->
+                        </div>
+                        <!--최근검색어 지우기-->
+                        
+
+                    </div>
+                    <!-- search_aside_bg -->
+
+                </div>
+                <!--PC 서치창 search_aside-->
+
+
+
+                    <div class="lang">
+                        
+                        <span class="select">
+                            한국
+                        </span>
+                        
+                        <div class="l_pop">
+                            <a href="#">한국</a>
+                            <a href="#">一本語</a>
+                            <a href="#">English</a>
+                        </div>
+                        <!--l_pop 나라선택 팝업창-->
+    
+                    </div>
+                    <!--lang국가선택-->
+                </div>
+                <!--aside_header-->
+
+
+
+                <ul class="gnb">
+
+                    <li><a href="#">그룹소개</a>
+                        <ul class="sub">
+                            <li><a href="#">그룹개요</a></li>
+                            <li><a href="#">경영정신</a></li>
+                            <li><a href="#">CI</a></li>
+                            <li><a href="#">연혁</a></li>
+                        </ul>
+                    </li>
+                    <!--li 1-->
+
+                    <li><a href="#">사업영역</a>
+                        <ul class="sub">
+                            <li><a href="#">웅진IT</a></li>
+                            <li><a href="#">웅진씽크빅</a></li>
+                            <li><a href="#">웅진북센</a></li>
+                            <li><a href="#">렉스필드 컨트리클럽</a></li>
+                            <li><a href="#">웅진플레이도시</a></li>
+                            <li><a href="#">웅진컴퍼스</a></li>
+                            <li><a href="#">웅진헬스원</a></li>
+                            <li><a href="#">웅진투투럽</a></li>
+                            <li><a href="#">놀이의발견</a></li>
+                        </ul>
+                    </li>
+                    <!--li 2-->
+
+                    <li><a href="#">지속가능경영</a>
+                        <ul class="sub">
+                            <li><a href="#">웅진재단</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                        </ul>
+                    </li>
+                    <!--li 3-->
+
+                    <li><a href="#">인재채용</a>
+                        <ul class="sub">
+                            <li><a href="#">인사철학</a></li>
+                            <li><a href="#">인사제도</a></li>
+                            <li><a href="#">직무소개</a></li>
+                        </ul>
+                    </li>
+                    <!--li 4-->
+
+                    <li><a href="#">고객센터</a>
+                        <ul class="sub">
+                            <li><a href="#">계열사 문의</a></li>
+                            <li><a href="#">법적고지</a></li>
+                            <li><a href="#">영상정보 처리방침</a></li>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                        </ul>
+                    </li>
+                    <!--li 5-->
+
+                </ul>
+                <!--main menu gnb-->
+                
+                <div class="bg"></div>
+                <!--sub메뉴 배경-->
+            </aside>
+            <!--모바일 메뉴창-->
+
+        </div>
+        <!--hWrap-->
+
+    </header>
+    <!--header-->
+
+
+
+    <section class="main">
+
+        <div class="mWrap">
+
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="./images/logo_love_work.svg" class="logocon">
+                        <h3>일에 대한 사랑</h3>
+                        <p>어떤 일을 즐겁게 했느냐, 마지못해 했느냐는<br>
+                        결과에 있어 엄청난 차이가 납니다.<br>
+                        어떤 일을 즐겁게 했다는 것은<br>
+                        그 일을 나의 것으로 받아들인 것이고,<br>
+                        그 일을 하고 있는 내가 행복하다는 뜻 입니다.</p>
+                    </div>
+                    <!--slide 1-->
+
+                    <div class="swiper-slide">
+                        <img src="./images/logo_love_customer.svg" class="logocon">
+                        <h3>고객에 대한 사랑</h3>
+                        <p>인간애를 통해 고객중심의<br>
+                        긍정적, 적극적 서비스를 합니다.</p>
+                    </div>
+                    <!--Slide 2-->
+
+                    <div class="swiper-slide">
+                        <img src="./images/logo_love_social.svg" class="logocon">
+                        <h3>사회에 대한 사랑</h3>
+                        <p>손으로 감싼다, 포용한다는 의미로<br>
+                        사회에 대한 포옹력있는 웅진을 나타냅니다.</p>
+                    </div>
+                    <!--Slide 3-->
+
+                    <div class="swiper-slide">
+                        <img src="./images/logo_love_challengy.svg" class="logocon">
+                        <h3>도전에 대한 사랑</h3>
+                        <p>과거에 만족하지 않고<br>
+                        항상 도전을 통해 높은 이상을 추구합니다.</p>
+                    </div>
+                    <!--Slide 4-->
+
+                    <div class="swiper-slide">
+                        <img src="./images/logo_love_change.svg" class="logocon">
+                        <h3>변화에 대한 사랑</h3>
+                        <p>새싹의 상징은 변화에서 비롯됩니다.<br>
+                        변화를 통해 성장을 모색하는 경영정신을 추구합니다.</p>
+                    </div>
+                    <!--Slide 5-->
+
+                    <div class="swiper-slide">
+                        <img src="./images/logo_love_company.svg" class="logocon">
+                        <h3>조직에 대한 사랑</h3>
+                        <p>웅진은 하나로 단결된 조직으로서<br>
+                        협동과 공정을 중시합니다.</p>
+                    </div>
+                    <!--Slide 6-->
+                </div>
+            </div>
+            <!--모바일 icon_slide_mo-->
+            
+            <div class="main_img_1">
+
+                <img src="./images/woongin_logo_color.svg" class="woonginlogo">
+                
+                <div class="woongjin_key">
+
+                    <div class="keyWrap keyWrap_1">
+                        <img src="./images/logo animate/job.svg" class="job">
+                        <div class="hover_text text1">
+                            <h3>일에 대한 사랑</h3>
+                            <p>어떤 일을 즐겁게 했느냐, 마지못해 했느냐는<br>
+                            결과에 있어 엄청난 차이가 납니다.<br>
+                            어떤 일을 즐겁게 했다는 것은<br>
+                            그 일을 나의 것으로 받아들인 것이고,<br>
+                            그 일을 하고 있는 내가 행복하다는 뜻 입니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="keyWrap keyWrap_1">
+                        <img src="./images/logo animate/change.svg" class="change">
+                        <div class="hover_text text2">
+                            <h3>변화에 대한 사랑</h3>
+                            <p>새싹의 상징은 변화에서 비롯됩니다.<br>
+                            변화를 통해 성장을 모색하는 경영정신을 추구합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="keyWrap keyWrap_1">
+                        <img src="./images/logo animate/community.svg" class="community">
+                        <div class="hover_text text3">
+                            <h3>사회에 대한 사랑</h3>
+                            <p>손으로 감싼다, 포용한다는 의미로<br>
+                            사회에 대한 포옹력있는 웅진을 나타냅니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="keyWrap keyWrap_1">
+                        <img src="./images/logo animate/group.svg" class="group">
+                        <div class="hover_text text4">
+                            <h3>조직에 대한 사랑</h3>
+                            <p>웅진은 하나로 단결된 조직으로서<br>
+                            협동과 공정을 중시합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="keyWrap keyWrap_1">
+                        <img src="./images/logo animate/challenge.svg" class="challenge">
+                        <div class="hover_text text5">
+                            <h3>도전에 대한 사랑</h3>
+                            <p>과거에 만족하지 않고<br>
+                            항상 도전을 통해 높은 이상을 추구합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="keyWrap keyWrap_1">
+                        <img src="./images/logo animate/customer.svg" class="customer">
+                        <div class="hover_text text6">
+                            <h3>고객에 대한 사랑</h3>
+                            <p>인간애를 통해 고객중심의<br>
+                            긍정적, 적극적 서비스를 합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="keyWrap keyWrap_2">
+                        <img src="./images/logo animate/w.svg" class="w">
+                        <img src="./images/logo animate/oo.svg" class="oo">
+                        <img src="./images/logo animate/n-1.svg" class="n-1">
+                        <img src="./images/logo animate/g.svg" class="g">
+                        <img src="./images/logo animate/j.svg" class="j">
+                        <img src="./images/logo animate/i.svg" class="i">
+                        <img src="./images/logo animate/n-2.svg" class="n-2">
+                    </div>
+                    
+                </div>
+                <!-- woongjin_key -->
+
+                <div class="txt_2">
+                    <p>웅진의 CI는<br>
+                        더 큰 세계를 향한 창의성, 또또사랑, 지속가능기업을<br>의미합니다.</p>
+                </div>
+
+                <button class="down">
+                    <img src="./images/down_green.png" alt="down">
+                </button>
+            </div>
+            <!--main_logo_img-->
+        </div>
+        <!--mWrap-->
+
+    </section>
+    <!--main-->
+
+
+
+
+
+    <section class="company">
+
+        <div class="vision">
+
+            <img src="./images/woongin_paju_saok_2.jpg" class="paju_company">
+
+            <div class="visionText">
+
+                <p class="pc">창조적 발상으로 고객의 삶을 향상<br>새로운 문화 창출</p>
+                <p class="mo">창조적 발상으로<br>고객의 삶을 향상<br>새로운 문화 창출</p>
+                
+                <h3>웅진은 남들과<br>
+                    <strong>다르게</strong> 보고<br>
+                    <strong>새롭게</strong> 생각합니다.</h3>
+
+            </div>
+            <!--text 박스-->
+        </div>
+        <!--왼쪽 vision row-->
+
+        <div class="companyRow ">
+           
+
+            <div class="companytxt item_img">
+                <strong>COMPANY</strong>
+            </div>
+
+            <div class="companyRow_2 ">
+
+                <div class="first item_img">
+
+                    <div class="img_box">
+                        <img src="./images/woongin_ceo.jpg">
+                    </div>
+    
+                    <div class="txt_box">
+    
+                        <strong>1980 웅진의 시작과 도약</strong>
+    
+                        <p>세일즈의 귀재,<br>
+                        출판업을 시작하다.</p>
+    
+                        <button>자세히보기</button>
+                    </div>
+    
+                </div>
+                <!--first-->
+    
+                <div class="second item_img">
+    
+                    <div class="img_box ttotto">
+
+                        <img src="./images/holding-hands.jpg" class="hand">
+
+                        <div class="txt_box">
+
+                            <strong>사랑하고,<br>또 사랑하고,<br>또 사랑합니다.</strong>
+    
+                            <button class="ttottoBtn">자세히보기</button>
+
+                        </div>
+
+                    </div>
+                    <!--img_box ttotto-->
+
+                    <div class="img_box singi">
+
+                        <img src="./images/woongin_open_ino.jpg" class="singic">
+
+                        <div class="txt_box">
+
+                            <strong class="singiTxt">신기문화</strong>
+    
+                            <button class="singiBtn">자세히보기</button>
+
+                        </div>
+                        
+
+                    </div>
+                    <!--img_box singi-->
+
+
+    
+                </div>
+                <!--second-->
+    
+                <div class="third item_img">
+    
+                    <div class="img_box">
+                        <img src="./images/ESG.jpg">
+                    </div>
+                    
+                    <div class="txt_box">
+    
+                        <strong>윤리제보센터</strong>
+    
+                        <p class="yunripcTxt">
+                            윤리제보센터는 누구에게나 열린 공간입니다.<br>
+                            웅진의 고객, 협력업체, 임직원 누구나 이용하실 수 있고,<br>
+                            웅진의 투명경영을 해치는 비윤리를 알고 있다면 언제든 제보해 주십시오.<br>
+                            윤리제보센터는 여러분과 함께 바른 길을 만들어 가겠습니다.</p>
+
+                        <p class="yunrimoTxt">
+                            윤리제보센터는 누구에게나 열린 공간입니다.<br>
+                            고객, 협력업체, 임직원 누구나 이용하실 수 있고,<br>
+                            웅진의 투명경영을 해치는 비윤리를 알고 있다면<br>
+                            언제든 제보해 주십시오.<br>
+                            윤리제보센터는 여러분과 함께 <br>
+                            바른 길을 만들어 가겠습니다.</p>
+    
+                        <button>자세히보기</button>
+                    </div>
+    
+                </div>
+                <!--third-->
+                
+
+            </div>
+            <!--company Row 2-->
+
+
+        </div>
+        <!--companyRow-->
+
+    </section>
+    <!--copmany소개-->
+
+
+
+
+
+    <section class="business">
+
+        <div class="text_box">
+
+            <strong>사업분야</strong>
+
+            <p>웅진은 끊임없이 성장해야 할 의무가 있다는 믿음으로<br>
+                새로운 사업, 새로운 제품, 새로운 시장에 도전합니다.</p>
+
+        </div>
+        
+
+        <div class="mo_businessWrap">
+
+            <a href="#">
+                <div class="business_box1 business_box">
+                    <img src="./images/woongin_thinkbig_logo.svg" class="businessLogo">
+                    <span>웅진씽크빅</span>
+                </div>
+            </a>
+            <!--business_box1-->
+
+
+    
+            <a href="#">
+                <div class="business_box2 business_box">
+                    <img src="./images/woongin_booksen_logo.svg" class="businessLogo">
+                    <span>웅진북센</span>
+                </div>
+            </a>
+            <!--business_box2-->
+
+
+    
+            <a href="#">
+                <div class="business_box3 business_box">
+                    <img src="./images/woongin_rexfield_logo.svg" class="businessLogo">
+                    <span>렉스필드<br>컨트리클럽</span>
+                </div>
+            </a>
+            <!--business_box3-->
+
+
+    
+            <a href="#">
+                <div class="business_box4 business_box">
+                    <img src="./images/woongin_play_logo.svg" class="businessLogo">
+                    <span>웅진플레이도시</span>
+                </div>
+            </a>
+            <!--business_box4-->
+
+
+    
+            <a href="#">
+                <div class="business_box5 business_box">
+                    <img src="./images/woongin_com_logo.svg" class="businessLogo">
+                    <span>웅진컴퍼스</span>
+                </div>
+            </a>
+            <!--business_box5-->
+
+
+    
+           <a href="#">
+                <div class="business_box6 business_box">
+                    <img src="./images/woongin_helthone_logo.svg" class="businessLogo">
+                    <span>웅진헬스원</span>
+                </div>
+            </a>
+            <!--business_box6-->
+
+
+    
+            <a href="#">
+                <div class="business_box7 business_box">
+                    <img src="./images/woongin_it_logo.svg" class="businessLogo">
+                    <span>웅진IT</span>
+                </div>
+            </a>
+            <!--business_box7-->
+
+
+    
+            <a href="#">
+                <div class="business_box8 business_box">
+                    <img src="./images/woongin_nolbal_logo.svg" class="businessLogo">
+                    <span>놀이의발견</span>
+                </div>
+            </a>
+            <!--business_box8-->
+
+
+    
+            <a href="#">
+                <div class="business_box9 business_box">
+                    <img src="./images/woongin_totolove_logo.svg" class="businessLogo">
+                    <span>웅진투투럽</span>
+                </div>
+            </a>
+            <!--business_box9-->
+        </div>
+        <!--mo_businessWrap mobile-->
+
+
+
+        <div class="pc_business_section">
+
+            <article>
+                <h4><a href="#">웅진씽크빅</a></h4>
+
+                <strong><img src="./images/woongin_thinkbig_logo.svg" alt="thinkbig"></strong>
+
+                <p><img src="./images/smartall_1.jpg"></p>
+
+                <span class="close_btn">close</span>
+
+            </article>
+            <!--웅진씽크빅-->
+
+            <article>
+                <h4><a href="#">웅진북센</a></h4>
+
+                <strong><img src="./images/woongin_booksen_logo.svg" alt="booksen"></strong>
+
+                <p><img src="./images/booksen.jpg"></p>
+
+                <span class="close_btn">close</span>
+
+            </article>
+            <!--웅진북센-->
+
+            <article>
+                <h4><a href="#">렉스필드 컨트리클럽</a></h4>
+
+                <strong><img src="./images/woongin_rexfield_logo.svg" alt="rexfield"></strong>
+
+                <p><img src="./images/woongin_rexfield.jpg"></p>
+
+                <span class="close_btn">close</span>
+
+            </article>
+            <!--렉스필드 컨트리클럽-->
+
+            <article>
+                <h4><a href="#">웅진플레이도시</a></h4>
+
+                <strong><img src="./images/woongin_play_logo.svg" alt="playdoci"></strong>
+
+                <p><img src="./images/woongin_playdoci_1.jpg"></p>
+
+                <span class="close_btn">close</span>
+
+            </article>
+            <!--웅진플레이도시-->
+
+            <article>
+                <h4><a href="#">웅진컴퍼스</a></h4>
+
+                <strong><img src="./images/woongin_com_logo.svg" alt="compus"></strong>
+
+                <p><img src="./images/woongin_com.png"></p>
+
+                <span class="close_btn">close</span>
+
+            </article>
+            <!--웅진컴퍼스-->
+
+            <article>
+                <h4><a href="#">웅진헬스원</a></h4>
+
+                <strong><img src="./images/woongin_helthone_logo.svg" alt="helthone"></strong>
+
+                <p><img src="./images/helthone.jpg"></p>
+
+                <span class="close_btn">close</span>
+
+            </article>
+            <!--웅진헬스원-->
+
+            <article>
+                <h4><a href="#">웅진IT</a></h4>
+
+                <strong><img src="./images/woongin_it_logo.svg" alt="it"></strong>
+
+                <p><img src="./images/woongin_it_1.jpg"></p>
+
+                <span class="close_btn">close</span>
+
+            </article>
+            <!--웅진IT-->
+
+            <article>
+                <h4><a href="#">놀이의발견</a></h4>
+
+                <strong><img src="./images/woongin_nolbal_logo.svg" alt="nolebalgyun"></strong>
+
+                <p><img src="./images/woongin_nolebal.jpg"></p>
+
+                <span class="close_btn">close</span>
+
+            </article>
+            <!--놀이의발견-->
+
+            <article>
+                <h4><a href="#">웅진투투럽</a></h4>
+
+                <strong><img src="./images/woongin_totolove_logo.svg" alt="totolove"></strong>
+
+                <p><img src="./images/love_1.jpg"></p>
+
+                <span class="close_btn">close</span>
+
+            </article>
+            <!--웅진투투럽-->
+
+        </div>
+        <!--pc_business_section-->
+
+
+
+
+
+        
+
+
+    </section>
+    <!--business 사업분야-->
+
+
+
+
+    <section class="news">
+
+        <div class="text_box">
+
+            <strong>NEWS</strong>
+
+            <p>새로운 내일을 만드는 웅진의 오늘을 만나보세요.</p>
+
+        </div>
+        <!--text_box-->
+
+        <div class="newsWrap">
+
+            <div class="news_img_box">
+                <img src="./images/news1.jpg" class="news_img">
+
+                <div class="news_text">
+                    <h4>재도약 나선 웅진 | 핵심동력 IT사업 낙점…글로벌 공략 시동</h4>
+                    <span class="channel_pc">딜사이트</span>
+                    <span class="date">2024-02-19</span>
+                </div>
+            </div>
+    
+
+
+            <div class="news_article">
+
+                <div class="news_text">
+                    <h4>웅진씽크빅, 앤서니 브라운 어린이 그림책 '우리 할아버지' 출간</h4>
+                    <span class="channel_pc">이코노뉴스</span>
+                    <span class="date">2024-02-27</span>
+                </div>
+
+
+                <div class="news_text">
+                    <h4>웅진북센 도서 플랫폼 ‘바로보네’, 릴레이 컬처프로젝트 실시</h4>
+                    <span class="channel_pc">팍스경제TV</span>
+                    <span class="date">2024-02-24</span>
+                </div>
+
+    
+                <div class="news_text">
+                    <h4>웅진씽크빅, 유데미-업스테이지 '실전 AI 서비스 기획 스터디' 챌린지 실시</h4>
+                    <span class="channel_pc">뉴스1</span>
+                    <span class="date">2024-02-21</span>
+                </div>
+                    
+    
+    
+                <div class="news_text">
+                    <h4>웅진투투럽 흡수합병 웅진, 화장품 사업 투트랙 본격화</h4>
+                    <span class="channel_pc">아시아투데이</span>
+                    <span class="date">2024-02-19</span>
+                </div>
+
+
+
+                <div class="news_text">
+                    <h4>웅진식품, '자연은 셔벗에이드 제로' 2종 출시</h4>
+                    <span class="channel_pc">식품저널</span>
+                    <span class="date">2024-02-17</span>
+                </div>
+    
+            </div>
+            <!--news_article-->
+
+        </div>
+        <!--newsWrap-->
+
+        
+
+
+    </section>
+    <!--news-->
+
+
+
+
+
+    <section class="sitemap">
+
+        <div class="sitemapWrap">
+            
+            <ul class="sitemap_gnb">
+
+                <li>그룹소개
+                    <ul class="sitemap_sub">
+                        <li><a href="#">그룹개요</a></li>
+                        <li><a href="#">경영정신</a></li>
+                        <li><a href="#">CI</a></li>
+                        <li><a href="#">연혁</a></li>
+                    </ul>
+                </li>
+                <!--li 1-->
+    
+                <li>사업영역
+                    <ul class="sitemap_sub">
+                        <li><a href="#">웅진IT</a></li>
+                        <li><a href="#">웅진씽크빅</a></li>
+                        <li><a href="#">웅진북센</a></li>
+                        <li><a href="#">렉스필드 컨트리클럽</a></li>
+                        <li><a href="#">웅진플레이도시</a></li>
+                        <li><a href="#">웅진컴퍼스</a></li>
+                        <li><a href="#">웅진헬스원</a></li>
+                        <li><a href="#">웅진투투럽</a></li>
+                        <li><a href="#">놀이의발견</a></li>
+                    </ul>
+                </li>
+                <!--li 2-->
+    
+                <li>지속가능경영
+                    <ul class="sitemap_sub">
+                        <li><a href="#">웅진재단</a></li>
+                        <li><a href="#">사회공헌</a></li>
+                        <li><a href="#">윤리경영</a></li>
+                    </ul>
+                </li>
+                <!--li 3-->
+    
+                <li>인재채용
+                    <ul class="sitemap_sub">
+                        <li><a href="#">인사철학</a></li>
+                        <li><a href="#">인사제도</a></li>
+                        <li><a href="#">직무소개</a></li>
+                    </ul>
+                </li>
+                <!--li 4-->
+    
+                <li>고객센터
+                    <ul class="sitemap_sub">
+                        <li><a href="#">계열사 문의</a></li>
+                        <li><a href="#">법적고지</a></li>
+                        <li><a href="#">영상정보 처리방침</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                    </ul>
+                </li>
+                <!--li 5-->
+    
+            </ul>
+            <!--sitemap_gnb-->
+    
+            <button class="ontop">
+                <img src="./images/ontop_green.svg">
+            </button>
+            <!--ontop button-->
+
+        </div>
+        <!--sitemapWrap-->
+
+
+    </section>
+    <!--sitemap-->
+
+       
+        
+
+
+
+
+
+
+    <footer>
+
+        <div class="fWrap">
+
+            <ul class="fMenu">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">찾아오시는길</a></li>
+                <li><a href="#">문의하기</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+            <!--fMenu-->
+
+            <div class="fTxt">
+                <p>대표이사 : 이수영 | 사업자등록번호 : 208-81-06344</p>
+                <address>주소 : 서울특별시 중구 청계천로 24, 6~9층, 16층(04521)</address>
+            </div>
+            <!--fTxt-->
+
+            <div class="f_logo">
+                <img src="./images/woongjinlogo_color.png" alt="woongjinlogo">
+            </div>
+            <!--logo-->
+
+            <div class="copyright">
+                COPYRIGHT 2008 WOONGJIN CORPORATION ALL RIGHT RESERVED.
+            </div>
+            <!--copyright-->
+
+            <div class="familysite">
+                        
+                <span class="slc">
+                    Family Site
+                </span>
+                
+                <div class="s_pop">
+                    <a href="#">웅진IT</a>
+                    <a href="#">웅진씽크빅</a>
+                    <a href="#">웅진북센</a>
+                    <a href="#">렉스필드 컨트리클럽</a>
+                    <a href="#">웅진플레이도시</a>
+                    <a href="#">웅진컴퍼스</a>
+                    <a href="#">웅진헬스원</a>
+                    <a href="#">웅진투투럽</a>
+                    <a href="#">놀이의발견</a>
+                </div>
+                <!--s_pop 사이트 선택 팝업창-->
+
+            </div>
+            <!--lang국가선택-->
+
+        </div>
+        <!--fWrap-->
+    </footer>
+    <!--footer-->
+
+
+
+</body>
+</html>

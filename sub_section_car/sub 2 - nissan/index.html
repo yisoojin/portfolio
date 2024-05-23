@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sub_nissan 300zx</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!--font-->
+
+    <script type="importmap">
+
+      {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js",
+            "gltf": "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js",
+            "orbit": "./src/js/OrbitControls.js"
+        }
+      }
+
+    </script>
+
+
+
+  </head>
+
+
+
+
+  <body id="main">
+
+
+    
+    <div id="progress-bar-container">
+
+      <label for="progress-bar">Loading.....</label>
+      <progress id="progress-bar" value="0" max="100"></progress>
+
+    </div>
+    <!--progress-bar-container-->
+
+    <header>
+      <div class="hwrap">
+
+        <h1>
+          <a href="../index.html">
+            <img src="./src/images/THE CLASSIC CAR logo.svg" alt="THE CLASSIC CAR" class="logo_img_g">
+            <!--side menu, 모바일에서 3D 페이지일때 사용하는 로고-->
+            <img src="./src/images/THE CLASSIC CAR logo white.svg" alt="THE CLASSIC CAR" class="logo_img_w">
+          </a>
+        </h1>
+        <!--logo-->
+      </div>
+    </header>
+
+    <section>
+
+      <div class="car_title_box">
+
+        <div class="title">
+          <div class="brand_logo">
+            <img src="./src/images/NISSAN LOGO.svg" alt="Nissan logo">
+          </div>
+
+          <h2 class="brand">NISSAN</h2>
+          <h3 class="car">300ZX</h3>
+          <h3 class="age">1989</h3>
+        </div>
+        <!--title-->
+
+        <canvas id="canvas"></canvas>
+
+        <button class="read_more">
+          <p>read more</p>
+          <img src="./src/images/nissan_more_arrow.svg">
+        </button>
+
+      </div>
+      <!--car_title_box-->
+
+
+      <div class="read">
+
+        <span><strong>The Z32</strong> was a new design, approved in final form by Nissan management on October 1, 1986, and designed by Isao Sono and Toshio Yamashita. 
+          The body was wider with a rounder profile and fewer hard edges. 
+          It had a marginally increased drag coefficient of .31 compared to the Z31's .30. 
+          Unchanged from the previous generation 300ZX was the displacement of the 2,960 cc (3.0 L) VG30 V6 engine, now with DOHC and variable valve timing (N-VCT), producing 222 bhp (225 PS; 166 kW) at 6,400 rpm and 198 lb⋅ft (268 N⋅m) at 4,800 rpm in naturally aspirated (NA) form. 
+          The twin turbocharged (TT) variant was upgraded with Garrett AiResearch parallel twin-turbochargers and dual intercoolers producing 300 bhp (304 PS; 224 kW) at 6,400 rpm and 283 lb⋅ft (384 N⋅m) of torque at 3,600 rpm. 
+          The Z32 was the first car to be marketed following the introduction of the 280 PS (206 kW) power ceiling imposed by JAMA that remained until 2004. 
+          Performance varied from 0-60 mph (97 km/h) times of 5.0-6.0 seconds depending on the source, and a governed top speed of 155 mph (249 km/h). 
+          Twin Turbocharged Z32s also featured adjustable two mode suspension and the four-wheel steering systems called "Super HICAS" (High Capacity Actively Controlled Steering), first introduced on the R31 Nissan Skyline. 
+          Nissan utilized the Cray-2 supercomputer to design the new Z32 with a form of CAD software making it one of the first production cars to utilize this tool.</span>
+
+      </div>
+      <!--read-->
+
+      <div class="mo_read_more_bg">
+        <button class="back_mo">
+          <a href=#>
+            <img src="./src/images/back.svg">
+          </a>
+        </button>
+      </div>
+
+      <button class="back">
+        <a href="../index.html">
+          <img src="./src/images/back.svg">
+        </a>
+      </button>
+
+  
+
+    </section>
+
+
+
+
+    <script src="./src/js/three.min.js"></script>
+
+    <script type="module" src="./src/js/main_sub1.js"></script>
+
+    <script type="module" src="./src/js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  </body>
+
+</html>

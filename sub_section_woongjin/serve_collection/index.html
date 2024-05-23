@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그룹개요</title>
+
+    <link rel="stylesheet" href="./css/sub-com.css">
+    <link rel="stylesheet" href="./css/sub-main.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="./js/./jquery-3.7.1.js"></script>
+    <script src="./js/jquery.mousewheel.min.js"></script>
+    <script src="./js/sub-main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/EasePack.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="hWrap">
+            
+            <h1>
+                <a href="#">
+                    <img src="../images/woongin_logo_w.png" class="mo">
+                    <img src="../images/woongin_logo_color.svg" class="pc">
+
+                </a>
+            </h1>
+            <!--LOGO-->
+
+
+            <button class="m_btn">
+                <img src="../images/menu_white.png" alt="mobile menu">
+            </button>
+            <!--mobile menu(햄버거)-->
+
+            <aside>
+
+                <div class="aside_header">
+
+                    <button class="close_btn">
+                        <img src="../images/close_green.png" alt="close">
+                    </button>
+                    <!--close버튼-->
+    
+                    <form class="search">
+                            <input type="text">
+                            
+                            <div class="search_btn">
+                                <img src="../images/seach_green.png">
+                            </div>
+                    </form>
+                    <!--서치창-->
+
+
+
+                <div class="search_aside">
+
+                    <div class="search_aside_bg">
+
+                        <div class="close">
+                            <h5>닫기</h5>
+                            <img src="../images/close_green.png" alt="close">
+                        </div>
+                        <!--닫기버튼-->
+
+                        <form class="a_search">
+                            <input type="text">
+                            <button>
+                                <img src="../images/seach_green.png" alt="search">
+                            </button>
+                        </form>
+                        <!--검색창-->
+
+                        <div class="search_box">
+                            
+                            <div class="recently">
+                                <h5>검색 히스토리</h5>
+                                <span></span>
+                            </div>
+                            <!--최근검색어-->
+
+                            
+                            <div class="recommend">
+                                <h5>추천 검색어</h5>
+                                <span class="recommend_span">웅진 경영정신</span>
+                                <span class="recommend_span">웅진 지속가능경영</span>
+                                <span class="recommend_span">또또사랑</span>
+                                <span class="recommend_span">웅진씽크빅</span>
+                                <span class="recommend_span">웅진 인사철학</span>
+                            </div>
+                            <!--추천검색어-->
+
+                        </div>
+                        <!--최근,추천검색어-->
+
+                        <div class="recently_delete">
+                            <h5>검색 히스토리 모두 지우기</h5>
+                            <!-- <img src="" class="delete"> -->
+                        </div>
+                        <!--최근검색어 지우기-->
+                        
+
+                    </div>
+                    <!-- search_aside_bg -->
+
+                </div>
+                <!--PC 서치창 search_aside-->
+
+
+
+                    <div class="lang">
+                        
+                        <span class="select">
+                            한국
+                        </span>
+                        
+                        <div class="l_pop">
+                            <a href="#">한국</a>
+                            <a href="#">一本語</a>
+                            <a href="#">English</a>
+                        </div>
+                        <!--l_pop 나라선택 팝업창-->
+    
+                    </div>
+                    <!--lang국가선택-->
+                </div>
+                <!--aside_header-->
+
+
+
+                <ul class="gnb">
+
+                    <li><a href="#">그룹소개</a>
+                        <ul class="sub">
+                            <li><a href="#">그룹개요</a></li>
+                            <li><a href="#">경영정신</a></li>
+                            <li><a href="#">CI</a></li>
+                            <li><a href="#">연혁</a></li>
+                        </ul>
+                    </li>
+                    <!--li 1-->
+
+                    <li><a href="#">사업영역</a>
+                        <ul class="sub">
+                            <li><a href="#">웅진IT</a></li>
+                            <li><a href="#">웅진씽크빅</a></li>
+                            <li><a href="#">웅진북센</a></li>
+                            <li><a href="#">렉스필드 컨트리클럽</a></li>
+                            <li><a href="#">웅진플레이도시</a></li>
+                            <li><a href="#">웅진컴퍼스</a></li>
+                            <li><a href="#">웅진헬스원</a></li>
+                            <li><a href="#">웅진투투럽</a></li>
+                            <li><a href="#">놀이의발견</a></li>
+                        </ul>
+                    </li>
+                    <!--li 2-->
+
+                    <li><a href="#">지속가능경영</a>
+                        <ul class="sub">
+                            <li><a href="#">웅진재단</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                        </ul>
+                    </li>
+                    <!--li 3-->
+
+                    <li><a href="#">인재채용</a>
+                        <ul class="sub">
+                            <li><a href="#">인사철학</a></li>
+                            <li><a href="#">인사제도</a></li>
+                            <li><a href="#">직무소개</a></li>
+                        </ul>
+                    </li>
+                    <!--li 4-->
+
+                    <li><a href="#">고객센터</a>
+                        <ul class="sub">
+                            <li><a href="#">계열사 문의</a></li>
+                            <li><a href="#">법적고지</a></li>
+                            <li><a href="#">영상정보 처리방침</a></li>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                        </ul>
+                    </li>
+                    <!--li 5-->
+
+                </ul>
+                <!--main menu gnb-->
+                
+                <div class="bg"></div>
+                <!--sub메뉴 배경-->
+            </aside>
+            <!--모바일 메뉴창-->
+
+        </div>
+        <!--hWrap-->
+
+    </header>
+    <!--header-->
+
+
+
+
+
+
+    <section class="sub_main">
+
+        <div class="main_wrap">
+            <strong>OVERVIEW</strong>
+            <span>웅진은 남들과<br>
+                다르게 보고<br>
+                새롭게 생각합니다.</span>
+            <p>웅진그룹은 1980년 창립 이후 창조적 발상으로 고객의 삶을 향상시키고 새로운 문화를 창출해 왔습니다.<br>
+                교육·출판으로 시작하여 생활환경과 식품사업으로 영역을 넓혀 성장하였고,<br>
+                2007년 지주회사 체제를 수립하여 세계적인 경쟁력 확보를 위한 발판을 마련하였습니다.<br>
+                웅진은 새로운 사업분야에 진출하여 끊임없는 도전을 성공으로 이끌어 나가는 동시에<br>
+                웅진의 창조혁신을 꽃피운 긍정과 사랑의 정신을 소중하게 키우고 있습니다.</p>
+        </div>
+
+        <div class="bg">
+            <img src="./images/nadir-shoot-of-a-crystal-building.jpg">
+        </div>
+
+    </section>
+    <!--sub_main-->
+
+
+
+
+
+    <section class="sub_sub sub1">
+
+        <strong>웅진그룹 경영 원칙</strong>
+
+        <div class="sub_wrap">
+            <div class="sub_box box1">
+
+                <div class="img_box img_box1"></div>
+
+                <span>창조</span>
+                <span class="eng eng1">creation</span>
+                <p class="tit">
+                    남다른 발상과 차별화 전략을 추구하며<br>
+                    창의적인 생각을 존중하고 구체화하기 위해 노력합니다
+                </p>
+                <p class="sub_tit sub_tit1">
+                    1980년 과외 금지 조치 당시 유명 강사의 강의를
+                    테이프로 제작해 집에서 공부할 수 있도록 한 <헤임고교학습>
+                </p>   
+                <p class="sub_tit sub_tit2">
+                    외국의 책을 번역하지 않고 우리나라의 자연생태, 생활 문화를 통해
+                    민족의 자긍심을 키워준 <어린이마을>
+                </p>
+                <p class="sub_tit sub_tit3">
+                    장군이나 열사 중심이 아닌 자기 분야에서 열심히 노력해
+                    최고의 전문가가 된 사람을 위인으로 규정한<웅진위인전기>
+                </p>
+            </div>
+            
+            <div class="sub_box box2">
+
+                <div class="img_box img_box2"></div>
+
+                <span>환경</span>
+                <span class="eng eng2">natural environment</span>
+                <p class="tit">
+                    환경은 미래를 위한 가장 가치있는 투자라는 믿음으로
+                    제품의 생산부터 폐기의 모든 과정에서 환경을 생각합니다.
+                </p>
+                <p class="sub_tit sub_tit1">
+                    지구온난화에 대응하기 위한 친환경 제품 개발 및
+                    '사랑은 뜨겁게 지구는 차갑게' 환경 캠페인 실천
+                </p>
+                <p class="sub_tit sub_tit2">
+                    온실가스 인벤토리 시스템, 녹색 구매, 리싸이클링 시스템 등
+                    청정생산부터 친환경적 폐기에 이르는 환경 경영의 실천
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!--sub_sub sub1-->
+
+
+
+
+
+    <section class="sub_sub sub2">
+
+        <div class="sub_wrap">
+            
+            <div class="sub_box box1">
+
+                <div class="img_box img_box3"></div>
+
+                <span>혁신</span>
+                <span class="eng eng1">innovation</span>
+                <p class="tit">
+                    기업은 끊임없이 성장해야 할 의무가 있다는
+                    믿음으로 새로운 사업, 새로운 제품, 새로운 시장에 도전합니다.
+                </p>
+                <p class="sub_tit sub_tit1">
+                    글로벌 무대로 사업을 확장해 가는 교육/출판 사업
+                </p>
+                <p class="sub_tit sub_tit2">
+                    글로벌 전문가 육성과 세계 1등 경쟁력을 갖추는 R&D 투자
+                </p>
+            </div>
+
+            <div class="sub_box box2">
+
+                <div class="img_box img_box4"></div>
+
+                <span>윤리</span>
+                <span class="eng eng2">ethics</span>
+                <p class="tit">
+                    창업 초기부터 공정하고 투명한 경영할동을 제1의 경영원칙으로 삼고
+                    회계, 인사, 구매의 투명성을 추구합니다.</p>
+                <p class="sub_tit sub_tit1">
+                    경실련이 수여하는 경제정의기업상 2회 수상(1998, 2001년)
+                </p>
+                <p class="sub_tit sub_tit2">
+                    윤리 제보, 감사, 교육을 통해 최고경영자부터 직원 모두가 윤리경영을인지하고 실천하는 윤리경영 시스템
+                </p>
+                <p class="sub_tit sub_tit3">
+                    공정 인사 제도와 통합 구매 시스템(MRO)을 통해 구매의 투명성
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!--sub_sub sub2-->
+
+
+
+
+
+
+    <section class="sitemap">
+
+        <div class="sitemapWrap">
+            
+            <ul class="sitemap_gnb">
+
+                <li>그룹소개
+                    <ul class="sitemap_sub">
+                        <li><a href="#">그룹개요</a></li>
+                        <li><a href="#">경영정신</a></li>
+                        <li><a href="#">CI</a></li>
+                        <li><a href="#">연혁</a></li>
+                    </ul>
+                </li>
+                <!--li 1-->
+    
+                <li>사업영역
+                    <ul class="sitemap_sub">
+                        <li><a href="#">웅진IT</a></li>
+                        <li><a href="#">웅진씽크빅</a></li>
+                        <li><a href="#">웅진북센</a></li>
+                        <li><a href="#">렉스필드 컨트리클럽</a></li>
+                        <li><a href="#">웅진플레이도시</a></li>
+                        <li><a href="#">웅진컴퍼스</a></li>
+                        <li><a href="#">웅진헬스원</a></li>
+                        <li><a href="#">웅진투투럽</a></li>
+                        <li><a href="#">놀이의발견</a></li>
+                    </ul>
+                </li>
+                <!--li 2-->
+    
+                <li>지속가능경영
+                    <ul class="sitemap_sub">
+                        <li><a href="#">웅진재단</a></li>
+                        <li><a href="#">사회공헌</a></li>
+                        <li><a href="#">윤리경영</a></li>
+                    </ul>
+                </li>
+                <!--li 3-->
+    
+                <li>인재채용
+                    <ul class="sitemap_sub">
+                        <li><a href="#">인사철학</a></li>
+                        <li><a href="#">인사제도</a></li>
+                        <li><a href="#">직무소개</a></li>
+                    </ul>
+                </li>
+                <!--li 4-->
+    
+                <li>고객센터
+                    <ul class="sitemap_sub">
+                        <li><a href="#">계열사 문의</a></li>
+                        <li><a href="#">법적고지</a></li>
+                        <li><a href="#">영상정보 처리방침</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                    </ul>
+                </li>
+                <!--li 5-->
+    
+            </ul>
+            <!--sitemap_gnb-->
+    
+            <button class="ontop">
+                <img src="../images/ontop_green.svg">
+            </button>
+            <!--ontop button-->
+
+        </div>
+        <!--sitemapWrap-->
+
+
+    </section>
+    <!--sitemap-->
+
+       
+        
+
+
+
+
+
+
+    <footer>
+
+        <div class="fWrap">
+
+            <ul class="fMenu">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">찾아오시는길</a></li>
+                <li><a href="#">문의하기</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+            <!--fMenu-->
+
+            <div class="fTxt">
+                <p>대표이사 : 이수영 | 사업자등록번호 : 208-81-06344</p>
+                <address>주소 : 서울특별시 중구 청계천로 24, 6~9층, 16층(04521)</address>
+            </div>
+            <!--fTxt-->
+
+            <div class="f_logo">
+                <img src="../images/woongjinlogo_color.png" alt="woongjinlogo">
+            </div>
+            <!--logo-->
+
+            <div class="copyright">
+                COPYRIGHT 2008 WOONGJIN CORPORATION ALL RIGHT RESERVED.
+            </div>
+            <!--copyright-->
+
+            <div class="familysite">
+                        
+                <span class="slc">
+                    Family Site
+                </span>
+                
+                <div class="s_pop">
+                    <a href="#">웅진IT</a>
+                    <a href="#">웅진씽크빅</a>
+                    <a href="#">웅진북센</a>
+                    <a href="#">렉스필드 컨트리클럽</a>
+                    <a href="#">웅진플레이도시</a>
+                    <a href="#">웅진컴퍼스</a>
+                    <a href="#">웅진헬스원</a>
+                    <a href="#">웅진투투럽</a>
+                    <a href="#">놀이의발견</a>
+                </div>
+                <!--s_pop 사이트 선택 팝업창-->
+
+            </div>
+            <!--lang국가선택-->
+
+        </div>
+        <!--fWrap-->
+    </footer>
+    <!--footer-->
+
+
+
+
+
+    
+</body>
+</html>

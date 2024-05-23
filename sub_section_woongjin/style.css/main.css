@@ -1,0 +1,889 @@
+@charset "utf-8";
+
+/***모바일***/
+.main{width: 100%; height: 100vh;
+    margin-top: -80px;
+    background-color: white;
+    background-image: linear-gradient(rgba(220, 220, 220, 0.7), 2px, transparent 2px),
+        linear-gradient(90deg, rgba(220, 220, 220, 0.7), 2px, transparent 2px),
+        linear-gradient(rgba(230, 230, 230, 0.6), 1px, transparent 1px),
+        linear-gradient(90deg, rgba(230, 230, 230, 0.6), 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;}
+
+.main .mWrap{}
+
+.main .mWrap .swiper{display: block;
+    width: 100%;
+    height: 33.56%;
+    position: absolute;
+    top: 120px; left: 50%;
+    transform: translateX(-50%);}
+
+.main .mWrap .swiper-slide{text-align: center;
+    position: relative;}
+
+.main .mWrap .swiper-slide img{display: block;
+    width: 100px; height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0px; left: 50%;
+    transform: translateX(-50%);}
+.main .mWrap .swiper-slide:nth-child(2) img{width: auto; height: 100px;
+    position: absolute; top: 20px;}
+.main .mWrap .swiper-slide:nth-child(4) img{width: 100px; height: auto;
+    position: absolute; top: 30px;}
+.main .mWrap .swiper-slide:nth-child(5) img{width: 100px; height: auto;
+    position: absolute; top: 50px;}
+.main .mWrap .swiper-slide:nth-child(6) img{position: absolute; top: 10px;}
+
+.main .mWrap .swiper-slide h3{text-wrap: nowrap;
+    font-size: 20px;
+    color: #A8AD00;
+    position: absolute;
+    top: 135px; left: 50%;
+    transform: translateX(-50%);}
+.main .mWrap .swiper-slide:first-child h3{
+    position: absolute;
+    top: 150px;}
+
+.main .mWrap .swiper-slide p{font-size: 13px;
+    text-align: center;
+    text-wrap: nowrap;
+    position: absolute;
+    top: 170px; left: 50%;
+    transform: translateX(-50%);}
+.main .mWrap .swiper-slide:first-child p{position: absolute;
+    top: 190px;}
+
+.main .mWrap .main_img_1{position: absolute;
+    top: 78.8%; left: 50%;
+    transform: translate(-50%, -50%);}
+
+.main .mWrap .main_img_1 .woonginlogo{width: 250px; height: auto;}
+.main .mWrap .main_img_1 .woonginlogo img{width: 250px; height: auto;}
+
+.main .mWrap .main_img_1 .txt_2{display: block;
+    text-align: center;
+    font-size: 13px;
+    text-wrap: nowrap;}
+
+.main .mWrap .main_img_1 .down{display: block;
+    opacity: 50%;
+    margin: 15px auto 0;}
+
+.main .mWrap .main_img_1 .down img{width: 40px; height: auto;}
+
+.main .mWrap .main_img_1 .woongjin_key{display: none;}
+
+
+/*.company*/
+.company{flex-direction: row;
+    width: 100%;}
+
+.company .vision{width: 100%; height: 44.9%;
+    position: relative;
+    overflow: hidden;}
+
+.company .vision img{width: 100%; height: 44.9%;
+    object-fit: cover;}
+
+.company .vision .visionText{position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(1, 1, 1, 0.8);
+    padding: 16px;
+    text-align: center;}
+
+.company .vision .visionText .mo{font-size: 15px;
+    margin-bottom: 15px;
+    color: #fff;}
+.company .vision .visionText .pc{display: none;}
+
+.company .vision .visionText h3{font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    text-wrap: nowrap;}
+
+.company .vision .visionText h3 strong{color: #A8AD00;}
+
+.company .companyRow .companytxt{width: 100%; height: 87px;
+    position: relative;}
+
+.company .companyRow .companyRow_2>div .txt_box{height: 176px;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    position: relative;}
+.company .companyRow .companyRow_2>div:last-child .txt_box{height: 224px;}
+
+.company .companyRow .companyRow_2>div .txt_box p{font-size: 14px;
+    text-wrap: nowrap;}
+
+.company .companyRow .companytxt strong{color: #A8AD00;
+    font-size: 27px;
+    position: absolute;
+    top: 40px; right: 20px;}
+
+.company .companyRow .companyRow_2 strong{font-size: 20px;}
+
+.company .companyRow .companyRow_2>div .txt_box{padding: 20px;
+    box-sizing: border-box;}
+
+.company .companyRow .companyRow_2>div .txt_box>button{width: 80px; height: 23px;
+    font-size: 12px;
+    border: 1px solid #4D525A;
+    border-radius: 20px;}
+
+.company .companyRow .companyRow_2 .first{width: 100%;}
+.company .companyRow .companyRow_2 .first .img_box{width: 100%; height: 536px;}
+.company .companyRow .companyRow_2 .first img{width: 100%; height: 536px; object-fit: cover;}
+
+.company .companyRow .companyRow_2 .first .txt_box p{position: absolute;
+    top: 67px; left: 20px;}
+
+.company .companyRow .companyRow_2 .first>.txt_box button{position: absolute;
+    top: 114px; left: 281px;}
+
+.company .companyRow .companyRow_2 .second{display: flex;
+    width: 100%;}
+
+.company .companyRow .companyRow_2 .second .ttotto{width: 50%;}
+
+.company .companyRow .companyRow_2 .second .singi{width: 50%;}
+
+.company .companyRow .companyRow_2 .second .txt_box button{margin-top: 20px;}
+.company .companyRow .companyRow_2 .second .ttotto .hand{width: 100%; height: 268px;
+    object-fit: cover;}
+.company .companyRow .companyRow_2 .second .singi .singic{width: 100%; height: 268px;
+    object-fit: cover;}
+
+
+.company .companyRow .companyRow_2 .third .img_box{width: 100%; height: 268px;}
+.company .companyRow .companyRow_2 .third img{width: 100%; height: 100%;
+    object-fit: cover;}
+.company .companyRow .companyRow_2 .third .txt_box{margin-bottom: 20px;}
+.company .companyRow .companyRow_2 .third .txt_box p{margin-top: 20px;}
+.company .companyRow .companyRow_2 .third .yunripcTxt{display: none;}
+.company .companyRow .companyRow_2 .third .yunrimoTxt{display: block;}
+
+.company .companyRow .companyRow_2 .third .txt_box>button{position: absolute;
+    top: 181px; right: 20px;}
+
+
+
+
+
+/*business*/
+.business{width: 100%; height: auto;
+    margin: 20px 0 40px;
+    position: relative;}
+
+.business .text_box{height: 122px;
+    text-align: right;
+    padding: 20px 20px 0;}
+
+.business .text_box strong{font-size: 27px;
+    color: #A8AD00;}
+
+.business .text_box p{font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+    text-wrap: nowrap;}
+
+.business .mo_businessWrap{display: block;
+    width: 100%; height: 691px;
+    display: flex; flex-wrap: wrap;
+    justify-content: center;}
+
+.business .mo_businessWrap>a{width: 33.33%; height: 231px; position: relative;}
+
+.business .mo_businessWrap>a:hover .business_box span{font-size: 20px;}
+
+.business .mo_businessWrap>a:nth-child(1){background-color: #FE9915;}
+.business .mo_businessWrap>a:nth-child(2){background-color: #E2AA49;}
+.business .mo_businessWrap>a:nth-child(3){background-color: #86C85F;}
+.business .mo_businessWrap>a:nth-child(4){background-color: #CA306D;}
+.business .mo_businessWrap>a:nth-child(5){background-color: #3A63CA;}
+.business .mo_businessWrap>a:nth-child(6){background-color: #71C5B8;}
+.business .mo_businessWrap>a:nth-child(7){background-color: #1C9CD2;}
+.business .mo_businessWrap>a:nth-child(8){background-color: #0092CF;}
+.business .mo_businessWrap>a:nth-child(9){background-color: #E7529F;}
+
+
+.business .mo_businessWrap .business_box{width: 100%; height: 100%;}
+
+.business .mo_businessWrap .business_box .businessLogo{width: auto; height: calc(100% - 180px);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);}
+
+.business .mo_businessWrap .business_box span{font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-wrap: nowrap;
+    position: absolute;
+    bottom: 20px; left: 50%;
+    transform: translateX(-50%);}
+.business .mo_businessWrap>a:hover .business_box span{font-size: 17px;
+    transition: 0.5s;}
+
+.pc_business_section{display: none;}
+
+
+
+
+
+/*news*/
+.news{width: 100%; height: auto;
+    margin: 0 0 40px;}
+
+.news .text_box{height: auto;
+    padding: 20px;
+    box-sizing: border-box;}
+
+.news .text_box strong{font-size: 27px;
+    color: #A8AD00;}
+
+.news .text_box p{font-size: 14px;
+    margin-top: 20px;
+    text-align: left;}
+
+.newsWrap{padding: 0 20px;}    
+
+.newsWrap .news_img_box img{width: 100%; height: auto;}
+
+.newsWrap .news_text{display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #A8AD00;
+    padding: 15px 0;
+    position: relative;}
+
+.newsWrap .news_text h4{font-size: 15px;
+    padding-left: 10px;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space : nowrap;
+    font-weight: normal;}
+
+.newsWrap .news_text h4::before{content: '';
+    display: block;
+    width: 5px; height: 5px;
+    border-radius: 5px;
+    background-color: #A8AD00;
+    position: absolute;
+    top : 50%; left: 0;}
+
+.newsWrap .news_text .channel_pc{display: none;}
+
+.newsWrap .news_text .date{font-size: 12px;
+    color: #878787;
+    text-align: right;
+    width: 20%}
+
+
+
+
+
+/*sitemap*/
+.sitemap{display: none;}
+
+
+
+
+
+
+
+
+/***태블릿***/
+@media all and (min-width : 768px){
+    .main .mWrap .swiper{display: block;
+        height: 45%;}
+
+    .main .mWrap .swiper-slide img{display: block;
+        width: 150px; height: auto;
+        object-fit: cover;
+        position: absolute;
+        top: 0px; left: 50%;
+        transform: translateX(-50%);}
+    .main .mWrap .swiper-slide:nth-child(2) img{width: auto; height: 200px;
+        position: absolute; top: 20px;}
+    .main .mWrap .swiper-slide:nth-child(4) img{width: 200px; height: auto;
+        position: absolute; top: 30px;}
+    .main .mWrap .swiper-slide:nth-child(5) img{width: 200px; height: auto;
+        position: absolute; top: 50px;}
+    .main .mWrap .swiper-slide:nth-child(6) img{position: absolute; top: 10px;}
+    
+    .main .mWrap .swiper-slide h3{text-wrap: nowrap;
+        font-size: 20px;
+        color: #A8AD00;
+        position: absolute;
+        top: 235px; left: 50%;
+        transform: translateX(-50%);}
+    .main .mWrap .swiper-slide:first-child h3{
+        position: absolute;
+        top: 250px;}
+    
+    .main .mWrap .swiper-slide p{font-size: 13px;
+        text-align: center;
+        text-wrap: nowrap;
+        position: absolute;
+        top: 270px; left: 50%;
+        transform: translateX(-50%);}
+    .main .mWrap .swiper-slide:first-child p{position: absolute;
+        top: 290px;}
+    
+    .main .mWrap .main_img_1{position: absolute;
+        top: 75%; left: 50%;
+        transform: translate(-50%, -50%);}
+    
+    .main .mWrap .main_img_1 .woonginlogo{width: 400px; height: auto;}
+    .main .mWrap .main_img_1 .woonginlogo img{width: 400px; height: auto;}
+    
+    .main .mWrap .main_img_1 .txt_2{display: block;
+        text-align: center;
+        font-size: 13px;
+        text-wrap: nowrap;}
+    
+    .main .mWrap .main_img_1 .down{display: block;
+        opacity: 50%;
+        margin: 15px auto 0;}
+    
+    .main .mWrap .main_img_1 .down img{width: 40px; height: auto;}
+    
+    .main .mWrap .main_img_1 .woongjin_gsap{display: none;}
+}
+
+
+
+
+
+
+
+/***pc***/
+@media all and (min-width : 1200px){
+    .main{width: 100%; max-width: 1920px;
+        height: 100vh;
+        margin-top: -160px;
+        background-color: white;
+        background-image: none;}
+        /* background-image: linear-gradient(rgba(220, 220, 220, 0.7), 2px, transparent 2px),
+            linear-gradient(90deg, rgba(220, 220, 220, 0.7), 2px, transparent 2px),
+            linear-gradient(rgba(230, 230, 230, 0.6), 1px, transparent 1px),
+            linear-gradient(90deg, rgba(230, 230, 230, 0.6), 1px, transparent 1px);
+        background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+        background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;} */
+
+    .main .mWrap{position: relative;
+        width: 100%; height: calc(100vh - 160px);}
+
+    .main .mWrap .swiper{display: none;}
+
+    .main .mWrap .main_img_1{width: 100%; height: 100vh;
+        position: unset;
+        transform: unset;}
+
+    .main .mWrap .main_img_1 .woonginlogo{
+        width: calc(100% - 640px); height: auto;
+        position: absolute;
+        top: 250px; left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        opacity: 50%;}
+
+
+    /*.woongjin_gsap*/
+    .main .mWrap .main_img_1 .woongjin_key{
+        display: block;
+        width: calc(100% - 640px); height: 100%;
+        position: absolute;
+        top: 40%; left: 50%;
+        transform: translateX(-50%);}
+
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap_1 .hover_text{opacity: 0;
+        background-color: #fff;
+        border: 2px dashed #A8AD00;
+        padding: 5px 10px;
+        border-radius: 10px;}
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap_1 .hover_text h3{
+        font-size: 20px;
+        margin-bottom: 5px;}
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap_1 .hover_text p{
+        font-size: 15px;}
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap_1:hover .hover_text{opacity: 1;
+        transition: all 1s;}
+
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap_1 .text1{position: absolute;
+        top: 3%; left: 10%;}
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap_1 .text2{position: absolute;
+        top: 17%; right: 38.5%;}
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap_1 .text3{position: absolute;
+        top: 22%; right: -22%;}
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap_1 .text4{position: absolute;
+        top: 2%; right: 25%;}
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap_1 .text5{position: absolute;
+        bottom: 37%; left: 10%;}
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap_1 .text6{position: absolute;
+        bottom: 49%; right: -12%;}
+
+    
+    
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .job{width: 13.9%; height: auto;
+        position: absolute;
+        top: 11.5%; left: 0;
+        animation-name: logoani1;
+        animation-duration: 8s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;}
+        
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .change{width: 15.5%; height: auto;
+        position: absolute;
+        top: 17%; right: 22.5%;
+        animation-name: logoani2;
+        animation-duration: 8s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;}
+
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .community{width: 12%; height: auto;
+        position: absolute;
+        top: 14%; right: 0%;
+        animation-name: logoani3;
+        animation-duration: 8s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;}
+
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .group{width: 12.2%; height: auto;
+        position: absolute;
+        top: 0%; right: 12.2%;
+        animation-name: logoani4;
+        animation-duration: 8s;
+        animation-timing-function: alternate;
+        animation-iteration-count: 1;}
+
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .challenge{width: 17%; height: auto;
+        position: absolute;
+        bottom: 39%; left: 35%;
+        animation-name: logoani5;
+        animation-duration: 8s;
+        animation-timing-function: alternate;
+        animation-iteration-count: 1;}
+
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .customer{width: 9%; height: auto;
+        position: absolute;
+        bottom: 44.5%; right: 3%;
+        animation-name: logoani6;
+        animation-duration: 8s;
+        animation-timing-function: alternate;
+        animation-iteration-count: 1;}
+
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .w{width: 13%; height: auto;
+        position: absolute;
+        top: 28%; left: 12.2%;
+        animation-name: bounce;
+        animation-direction: alternate;
+        animation-duration: 2s;
+        animation-iteration-count: 6;
+        animation-timing-function: ease-in;}
+
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .oo{width: 19%; height: auto;
+        position: absolute;
+        top: 28%; left: 26.7%;
+        animation-name: bounce;
+        animation-direction: alternate;
+        animation-duration: 2s;
+        animation-iteration-count: 6;
+        animation-timing-function: ease-in;}
+
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .n-1{width: 8.9%; height: auto;
+        position: absolute;
+        top: 28%; left: 46.5%;
+        animation-name: bounce;
+        animation-direction: alternate;
+        animation-duration: 2s;
+        animation-iteration-count: 6;
+        animation-timing-function: ease-in;}
+
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .g{width: 8.9%; height: auto;
+        position: absolute;
+        top: 28%; left: 57%;
+        animation-name: bounce;
+        animation-direction: alternate;
+        animation-duration: 2s;
+        animation-iteration-count: 6;
+        animation-timing-function: ease-in;}
+
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .j{width: 4%; height: auto;
+        position: absolute;
+        top: 28%; left: 66.5%;
+        animation-name: bounce;
+        animation-direction: alternate;
+        animation-duration: 2s;
+        animation-iteration-count: 6;
+        animation-timing-function: ease-in;}
+
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .i{width: 2.4%; height: auto;
+        position: absolute;
+        top: 28%; left: 73%;
+        animation-name: bounce;
+        animation-direction: alternate;
+        animation-duration: 2s;
+        animation-iteration-count: 6;
+        animation-timing-function: ease-in;}
+        
+    .main .mWrap .main_img_1 .woongjin_key .keyWrap .n-2{width: 8.9%; height: auto;
+        position: absolute;
+        top: 28%; left: 77.5%;
+        animation-name: bounce;
+        animation-direction: alternate;
+        animation-duration: 2s;
+        animation-iteration-count: 6;
+        animation-timing-function: ease-in;}
+
+
+        @keyframes logoani1 {
+            0%{opacity: 0; top:-11.5%;}
+            50%{opacity: 0; top:-11.5%;}
+            80%{opacity: 0.5;}
+            100%{opacity: 1; top: 11.5%;}}  
+            
+        @keyframes logoani2 {
+            0%{opacity: 0; top: 0%;}
+            50%{opacity: 0; top: 0%;}
+            80%{opacity: 0.5;}
+            100%{opacity: 1; top: 17%;}}
+
+        @keyframes logoani3 {
+            0%{opacity: 0; top: 0%;}
+            50%{opacity: 0; top: 0%;}
+            80%{opacity: 0.5;}
+            100%{opacity: 1; top: 14%;}}
+
+        @keyframes logoani4 {
+            0%{opacity: 0; top: -10%;}
+            50%{opacity: 0; top: -10%;}
+            80%{opacity: 0.5;}
+            100%{opacity: 1; top: 0%;}}
+
+        @keyframes logoani5 {
+            0%{opacity: 0; bottom: 64%; left: 35%;}
+            50%{opacity: 0; bottom: 64%; left: 35%;}
+            80%{opacity: 1;}
+            100%{opacity: 1; bottom: 39%; left: 35%;}}
+
+        @keyframes logoani6 {
+            0%{opacity: 0; bottom: 69.5%; right: 3%;}
+            50%{opacity: 0; bottom: 69.5%; right: 3%;}
+            80%{opacity: 1;}
+            100%{opacity: 1; bottom: 44.5%; right: 3%;}}
+
+        @-webkit-keyframes bounce {
+            from {margin-bottom: 0}
+            to {margin-bottom: -8%}}
+            
+
+        @keyframes bounce {
+            from {margin-top: 0}
+            to {margin-top: -8%}}
+
+
+
+    .main .mWrap .main_img_1 .txt_2{display: none;}
+        
+    .main .mWrap .main_img_1 .down{display: none;}
+
+
+
+    /*.company*/
+    .company{width: 100%; height: 100vh;
+        display: flex;
+        text-wrap: nowrap;}
+    
+    .company .vision{width: 50%; height: 100vh;
+        position:sticky;
+        top:0; left: 0;}
+
+    .company .vision img{width: 100%; height: 100vh;
+        object-fit: cover;}
+
+    .company .vision .visionText{position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(1, 1, 1, 0.8);
+        padding: 32px;
+        text-align: left;}
+
+    .company .vision .visionText .pc{display: block;
+        font-size: 20px;
+        margin-bottom: 17px;
+        color: #fff;}
+    .company .vision .visionText .mo{display: none;}
+
+    .company .vision .visionText h3{font-size: 32px;
+        color: #fff;
+        font-weight: bold;}
+
+    .company .vision .visionText h3 strong{color: #A8AD00;}
+
+    .company .companyRow{width: 50%;
+        position: relative;
+        overflow: scroll;}
+
+    .company .companyRow::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/}
+
+    .company .companyRow .companytxt{color: #A8AD00;
+        width: 100%; height: 150px;
+        position: absolute;
+        top: 0px; right: 0px;}
+
+    .company .companyRow .companytxt strong{font-size: 27px;
+        margin-top: 40px; margin-right: 20px;}
+
+    .company .companyRow .companyRow_2{position: absolute;
+        top: 150px; left: 0;}
+
+    .company .companyRow .companyRow_2 img{width: 100%; height: auto;
+        object-fit: cover;}
+
+    .company .companyRow .companyRow_2>div .txt_box{height: 235px;
+        padding: 32px 32px 0 32px;
+        box-sizing: border-box;
+        position: relative;}
+
+    .company .companyRow .companyRow_2>div .txt_box>strong{font-size: 28px;
+        font-weight: bold;
+        color: #4D525A;}
+    .company .companyRow .companyRow_2>div .txt_box>button{width: 130px; height: 38px;
+        font-size: 20px;
+        border: 1px solid #4D525A;
+        border-radius: 20px;}
+
+    .company .companyRow .companyRow_2>div .txt_box>button:hover{background-color: #A8AD00;
+        color: white;
+        border: none;}
+
+    .company .companyRow .companyRow_2 .first .img_box{width: 100%; height: 585px;} 
+
+    .company .companyRow .companyRow_2 .first img{height: 100%; object-fit: cover;}
+
+    .company .companyRow .companyRow_2 .first .img_box{width: 100%;}
+    .company .companyRow .companyRow_2 .first .txt_box{display: flex;}
+    .company .companyRow .companyRow_2 .first>.txt_box p{position: absolute;
+        top: 32px; left: 50%;}
+    .company .companyRow .companyRow_2 .first>.txt_box button{position: absolute;
+        top: 91px; left: 50%;}
+
+
+
+    .company .companyRow .companyRow_2 .second{display: flex;}
+    .company .companyRow .companyRow_2 .second .txt_box{display: flex; flex-direction: column;}
+
+    .company .companyRow .companyRow_2 .second .ttotto .hand{width: 100%; height: 585px;}
+    .company .companyRow .companyRow_2 .second .singi .singic{width: 100%; height: 585px;}
+    .company .companyRow .companyRow_2 .second img{width: 100%;}
+
+    .company .companyRow .companyRow_2 .third .img_box{width: 100%; height: 585px;}
+    .company .companyRow .companyRow_2 .third .txt_box p{margin-top: 20px;}
+    .company .companyRow .companyRow_2 .third .yunripcTxt{display: block;}
+    .company .companyRow .companyRow_2 .third .yunrimoTxt{display: none;}
+    .company .companyRow .companyRow_2 .third .txt_box>button{position: absolute;
+        top: 32px; right: 32px;}
+
+
+
+
+
+    /*business*/
+
+    .business{width: 100%; height: 100vh;
+        overscroll-behavior: none;
+        margin: unset;
+        padding: 50px;
+        box-sizing: border-box;
+        position: relative;}
+
+    .business .text_box{padding: unset;
+        text-align: left;}
+
+    .business .text_box p{font-size: 20px;
+        margin-top: 17px;
+        color: #4D525A;}
+
+    .business .mo_businessWrap{display: none;}
+
+
+
+
+    /*.business .pc_business_section*/
+    .pc_business_section{display: block;
+        display: flex;
+        width: calc(100% - 100px); height: calc(100vh - 300px);
+        margin: 0 auto;
+        position: absolute;
+        bottom : 50px;}
+  
+    .pc_business_section article{width: 11.11%; height: 100%;
+        position: relative;
+        margin-right: 10px;
+        overflow: hidden;
+        box-shadow: 3px 3px 3px #bbb;
+        border-radius: 5px;}
+    .pc_business_section article:last-child{margin-right: 0;}
+    .pc_business_section article.on{width: 60%; height: 100%;
+        transition: all 1.5s;}
+
+    .pc_business_section article h4{width: 100%; height: 50px;
+        font-size: 0.8vw;
+        position: absolute;
+        bottom: 50px; left: 0;
+        text-align: center;
+        line-height: 50px;
+        opacity: 0.4;}
+    .pc_business_section article.on h4{height: 100px;
+        font-size: 1.5vw;
+        padding-top: 20px;
+        box-sizing: border-box;
+        background-color: #000; color: #fff;
+        opacity: 1;}
+
+    .pc_business_section article p{display: none;
+        width:100%; height:100%;}
+    .pc_business_section article p img{width:100%; height:100%;
+        object-fit: contain;
+        object-position: center;}
+
+    .pc_business_section article.on p{width: 100%; height: 100%; display: block;}
+
+    .pc_business_section article .close_btn{margin-right: 20px;
+        display: none;
+        color: #fff;
+        font-size: 1vw;
+        position: absolute;
+        bottom: 110px; right: 0;
+        z-index: 3;
+        cursor: pointer;}
+
+    .pc_business_section article.on .close_btn{display: block;}
+    
+    .pc_business_section article:hover h4{opacity: 0.8;}
+
+    .pc_business_section article:nth-child(1){background-color: #FE9915;}
+    .pc_business_section article:nth-child(2){background-color: #E2AA49;}
+    .pc_business_section article:nth-child(3){background-color: #86C85F;}
+    .pc_business_section article:nth-child(4){background-color: #CA306D;}
+    .pc_business_section article:nth-child(5){background-color: #3A63CA;}
+    .pc_business_section article:nth-child(6){background-color: #71C5B8;}
+    .pc_business_section article:nth-child(7){background-color: #1C9CD2;}
+    .pc_business_section article:nth-child(8){background-color: #0092CF;}
+    .pc_business_section article:nth-child(9){background-color: #E7529F;}
+  
+    .pc_business_section article strong{position: absolute;
+        bottom: 96px; left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: calc(100% - 40px);
+        height: auto;
+        object-fit: cover;}
+    
+    .pc_business_section article.on strong{display: none;}
+
+    
+
+
+
+
+
+
+    /*news*/
+    .news{width: 100%; height: 100vh; max-width: 1920px;
+        text-wrap: nowrap;}
+
+    .news .text_box{padding: 30px 50px 50px 50px;
+        box-sizing: border-box;}
+
+    .news .text_box p{font-size: 20px;
+        color: #4D525A;
+        font-weight: bold;}
+
+    .newsWrap{display: flex;
+        width: 100vw;
+        padding: 0 50px;
+        box-sizing: border-box;}
+
+    .newsWrap .news_img_box{width: 50%; height: 59.3%;
+        padding-right: 25px;}
+
+    .newsWrap .news_img_box .news_img{width: 100%; height: 100%;
+        object-fit: cover;
+        object-position: center;}
+    
+    .newsWrap .news_article{width: 50%;
+        padding-left: 25px;
+        box-sizing: border-box;}
+
+    .newsWrap .news_article .news_text{padding: 4.8% 0;}
+
+    .newsWrap .news_text h4{width: 65%;
+        padding-left: 22px;
+        font-size: 20px;}
+    .newsWrap .news_img_box>.news_text h4::before{position: absolute;
+        top: 50%;}
+
+    .newsWrap .news_img_box>.news_text{padding: 25px 0;
+        border: none;}
+
+    .newsWrap .news_img_box>.news_text h4{padding-left: 25px;}
+
+    .newsWrap .news_text .channel_pc{display: block;
+        width: 18%;
+        font-size: 20px;
+        text-align: right;
+        color: #878787;}
+
+    .newsWrap .news_text .date{width: 17%;
+        font-size: 20px;}
+
+
+
+
+
+
+
+
+    /*.sitemap*/
+
+    .sitemap{display: block;
+        width: 100%;
+        border-top: 1px solid #b7b7b7;
+        padding: 50px 50px 0;
+        box-sizing: border-box;}
+
+    .sitemap .sitemapWrap{width: auto;
+        margin: 0 auto;
+        position: relative;}
+
+    .sitemap .sitemapWrap .sitemap_gnb{display: flex;
+        width: 910px;
+        justify-content: space-between;
+        text-wrap: nowrap;}
+
+    .sitemap .sitemapWrap .sitemap_gnb>li{font-size: 20px;
+        font-weight: bold;}
+
+    .sitemap .sitemapWrap .sitemap_gnb .sitemap_sub{font-size: 17px;
+        font-weight: normal;}
+
+    .sitemap .sitemapWrap .sitemap_gnb .sitemap_sub>li{margin-top: 32px;
+        margin-bottom: 32px;}
+
+    .sitemap .sitemapWrap .sitemap_gnb .sitemap_sub>li:hover{font-weight: bold;}
+
+    .sitemap .sitemapWrap .sitemap_gnb .sitemap_sub>li:last-child{margin-bottom: 0;}
+
+    .sitemap .sitemapWrap .ontop{width: 100px; height: 100px;
+        position: absolute;
+        top: 0px; right: 0px;}
+    
+    
+}

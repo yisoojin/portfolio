@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sub_ford mustang</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!--font-->
+
+    <script type="importmap">
+
+      {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js",
+            "gltf": "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js",
+            "orbit": "./src/js/OrbitControls.js"
+        }
+      }
+
+    </script>
+
+
+
+  </head>
+
+
+
+
+  <body id="main">
+
+
+    
+    <div id="progress-bar-container">
+
+      <label for="progress-bar">Loading.....</label>
+      <progress id="progress-bar" value="0" max="100"></progress>
+
+    </div>
+    <!--progress-bar-container-->
+
+    <header>
+      <div class="hwrap">
+
+        <h1>
+          <a href="../index.html">
+            <img src="./src/images/THE CLASSIC CAR logo.svg" alt="THE CLASSIC CAR" class="logo_img_g">
+            <!--side menu, 모바일에서 3D 페이지일때 사용하는 로고-->
+            <img src="./src/images/THE CLASSIC CAR logo white.svg" alt="THE CLASSIC CAR" class="logo_img_w">
+          </a>
+        </h1>
+        <!--logo-->
+      </div>
+    </header>
+
+    <section>
+
+      <div class="car_title_box">
+
+        <div class="title">
+          <div class="brand_logo">
+            <img src="./src/images/Ford Mustang logo.svg" alt="Ford logo">
+          </div>
+
+          <h2 class="brand">FORD</h2>
+          <h3 class="car">MUSTANG</h3>
+          <h3 class="age">1965</h3>
+        </div>
+        <!--title-->
+
+        <canvas id="canvas"></canvas>
+
+        <button class="read_more">
+            <p>read more</p>
+            <img src="./src/images/ford_more_arrow.svg">
+        </button>
+
+      </div>
+      <!--car_title_box-->
+
+
+      <div class="read">
+
+        <span><strong>The first-generation Ford Mustang</strong> was manufactured by Ford from March 1964 until 1973.
+          The introduction of the Mustang created a new class of automobiles known as pony cars.
+          The Mustang's styling, with its long hood and short deck, proved wildly popular and inspired a host of competition.
+          Since it was introduced four months before the usual start of the 1965 production year and manufactured alongside 1964 Ford Falcons and 1964 Mercury Comets, the earliest Mustangs are widely referred to as the "1964½" model by enthusiasts.
+          Nevertheless, all 1964½ cars were given 1965 U.S. standard VINs at the time of production, and - with limited exception to the earliest of promotional materials - were marketed by Ford as 1965 models.
+          The low-end model hardtop used a "U-code" 170 cu in (2.8 L) straight-6 engine shared with the Falcon, as well as a three-speed manual transmission, and retailed for US$2,368 (equivalent to $23,263 in 2023).
+          Standard equipment for the early 1965 Mustangs included black front seat belts, a glove box light, and a padded dashboard. 
+          Production began in March 1964. 
+          Mustang Serial Number One (5F08F100001) was sold on April 14, 1964, at the George Parsons Ford dealership in St. John's, Newfoundland, Canada. 
+          Official introduction followed on April 17 at the 1964 World's Fair. 
+          The V8 models were identified with a badge on the front fender that spelled out the engine's cubic inch displacement ("260" or "289") over a wide "V." 
+          This emblem was identical to the one on the 1964 Fairlane.</span>
+
+      </div>
+      <!--read-->
+
+      <div class="mo_read_more_bg">
+        <button class="back_mo">
+          <a href=#>
+            <img src="./src/images/back.svg">
+          </a>
+        </button>
+      </div>
+
+      <button class="back">
+        <a href="../index.html">
+          <img src="./src/images/back.svg">
+        </a>
+      </button>
+
+
+    </section>
+
+   
+
+
+
+    <script src="./src/js/three.min.js"></script>
+
+    <script type="module" src="./src/js/main_sub1.js"></script>
+
+    <script type="module" src="./src/js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,132 @@
+/***모바일***/
+
+/*sub_main*/
+.sub_main{margin-top: -80px;
+    padding-top: 80px;
+    box-sizing: border-box;}
+.sub_main .bg{width: 32.3%; height: 21.42%;}
+.sub_main .bg img{width: 100%; height: 100%;}
+
+/*section*/
+section{width: 100%; height: 100vh;
+    padding: 5.12% 5.12%;
+    box-sizing: border-box;}
+
+section strong{font-size: 27px;
+    color: #A8AD00;
+    display: block;
+    margin-bottom: 4.9%;}
+
+.sub1{background-color: rgba(168, 173, 0, 0.1);}
+
+section .sub_wrap{width: 100%; height: 100%;}
+
+section .sub_wrap .sub_box{width: 100%; height: 50%;}
+
+section .sub_wrap .sub_box .img_box{width: 92%; height: 47.2%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;}
+
+section .sub_wrap .sub_box .img_box1{background-image: url(../images/library-reading.jpg);}
+section .sub_wrap .sub_box .img_box2{background-image: url(../images/planting-new-plants-nature.jpg);}
+section .sub_wrap .sub_box .img_box3{background-image: url(../images/smartall.png);}
+section .sub_wrap .sub_box .img_box4{background-image: url(../images/ESG.jpg);}
+
+section .sub_wrap .sub_box span{font-size: 20px;
+    font-weight: bold;}
+section .sub_wrap .sub_box .eng{color: #A8AD00;
+    opacity: 40%;}
+
+
+    
+
+
+
+
+
+/*sitemap*/
+.sitemap{display: none;}
+
+
+
+
+
+
+
+
+/***태블릿***/
+@media all and (min-width : 768px){
+
+    /*section*/
+    section{width: 100%; height: 100vh;}
+
+
+    
+    
+}
+
+
+
+
+
+
+
+/***pc***/
+@media all and (min-width : 1200px){
+
+    .sub_main .bg{width: 6.56%; height: 18.16%;}
+    .sub_main .bg img{width: 100%; height: 100%;}
+
+    /*section*/
+    section{padding: 4.9% 12.9%;
+        box-sizing: border-box;}
+
+    section .sub_wrap{width: 100%; height: 100%;
+        display: flex;}
+
+    section .sub_wrap .sub_box{width: 50%; height: 100%;}
+
+    section .sub_wrap .sub_box .img_box{width: 100%; height: 36.8%;}
+
+
+   
+    
+    /*.sitemap*/
+
+    .sitemap{display: block;
+        width: 100%;
+        border-top: 1px solid #b7b7b7;
+        padding: 50px 50px 0;
+        box-sizing: border-box;}
+
+    .sitemap .sitemapWrap{width: auto;
+        margin: 0 auto;
+        position: relative;}
+
+    .sitemap .sitemapWrap .sitemap_gnb{display: flex;
+        width: 910px;
+        justify-content: space-between;
+        text-wrap: nowrap;}
+
+    .sitemap .sitemapWrap .sitemap_gnb>li{font-size: 20px;
+        font-weight: bold;}
+
+    .sitemap .sitemapWrap .sitemap_gnb .sitemap_sub{font-size: 17px;
+        font-weight: normal;}
+
+    .sitemap .sitemapWrap .sitemap_gnb .sitemap_sub>li{margin-top: 32px;
+        margin-bottom: 32px;}
+
+    .sitemap .sitemapWrap .sitemap_gnb .sitemap_sub>li:hover{font-weight: bold;}
+
+    .sitemap .sitemapWrap .sitemap_gnb .sitemap_sub>li:last-child{margin-bottom: 0;}
+
+    .sitemap .sitemapWrap .ontop{width: 100px; height: 100px;
+        position: absolute;
+        top: 0px; right: 0px;}
+    
+    
+}

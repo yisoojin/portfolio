@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+/*reset*/
+* {margin: 0; padding: 0;
+  box-sizing: border-box;
+  color: #3C3C3B;
+  font-weight: bold;
+  font-family: "Lora", serif;}
+
+body{overflow-x: hidden;
+  overflow-y: hidden;}  
+
+html {font-size: 62.5%;
+  width: 100vw; height: 100vh;}
+
+#main{width: 100vw; height: 100vh;}
+
+ul, li{list-style: none;}
+
+button{border: none;
+  background: none;}
+
+a{color: initial;
+  text-decoration: none;}
+
+
+
+
+/*progress-bar*/
+#progress-bar-container{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; height: 100vh;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  z-index: 995;}
+
+label{padding-bottom: 7px;
+  font-size: 2rem;}
+
+#progress-bar{width: 30%; height: 3%;}
+
+
+
+
+/*main background-image*/
+#main{background-image: url(../images/ford\ mustang\ sub\ bg_pc.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;}
+
+
+
+/*header*/
+header{width: 100vw;
+  height: 19.5%;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 992;}
+
+.hwrap{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.5%;}
+
+h1{width: 15rem; height: 8rem;}
+
+.logo_img_g{width: 15rem; height: 8rem;
+  display: none;}
+
+.logo_img_w{width: 15rem; height: 8rem;
+  display: block;}
+
+
+/*section*/
+section{display: flex;
+  justify-content: space-between;
+  width: 75%; height: 70%;
+  position: absolute;
+  top: 19.5%; left: 50%;
+  transform: translateX(-50%);}  
+
+
+
+/*car_title_box*/
+.car_title_box{width: 47%; height: 100%;
+  position: relative;}
+.car_title_box h2{font-size: 6vw; color: #09203F;
+  line-height: 4vw;
+  margin-bottom: 1vw;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;}
+.car_title_box h3{font-size: 4vw; color: #09203F;
+  line-height: 3vw;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;}
+.car_title_box .car{margin-bottom: 1vw;}
+.car_title_box .brand_logo{width: auto; height: 6vw;
+  margin-bottom: 1vw;}
+.car_title_box .brand_logo>img{width: auto; height: 6vw;}
+
+
+canvas{width: 100%; height: 100%;
+  display: block;
+  position: absolute;
+  bottom: -2vh; left: -3vw;}
+
+
+.car_title_box .read_more{display: none;}
+
+
+
+/*read*/
+.read{width: 47%; height: 90%;
+  overflow: scroll;
+  overflow-x: hidden;}
+.read::-webkit-scrollbar{width: 1rem; border-radius: 10px; background-color: rgba(255, 255, 255, 0.1);}
+.read::-webkit-scrollbar-thumb{background-color: #09203F;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 3px solid transparent;}
+.read::-webkit-scrollbar-track{border-radius: 10px;}
+
+.read span{font-size: 1.2vw; color: #fff; font-weight: normal;}
+.read strong{font-size: 1.5vw; color: #fff;}
+.back_mo{display: none;}
+.back{position: absolute;
+  right: 0; bottom: 0;}
+
+
+
+/*모바일*/    
+@media all and (max-width : 76.8rem){
+
+  /*main background-image*/
+  #main{background-image: url(../images/ford\ mustang\ sub\ bg_mo_1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;}
+
+
+  /*header*/
+  header{height: 15.4%;}
+  
+  .hwrap{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 4rem;
+    padding-top: unset;}
+  
+  h1{width: 8rem; height: 4.4rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);}
+  
+  .logo_img_g{width: 8rem; height: 4.4rem;
+    display: block;}
+  
+  .logo_img_w{width: 8rem; height: 4.4rem;
+    display: none;}
+
+  /*section*/
+  section{width: 75%; height: 70%;
+    position: absolute;
+    top: 15.4%; left: 50%;
+    transform: translateX(-50%);}  
+
+
+
+  /*car_title_box*/
+  .car_title_box{width: 100%; height: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 1rem;}
+  .car_title_box h2{font-size: 12vw; color: #09203F;
+    line-height: 8vw;
+    margin-bottom: 1vw;}
+  .car_title_box h3{font-size: 8vw; color: #09203F;
+    line-height: 6vw;}
+  .car_title_box .car{margin-bottom: 1vw;}
+  .car_title_box .brand_logo{width: auto; height: 9vw;
+    margin-bottom: 1vw;}
+  .car_title_box .brand_logo>img{width: auto; height: 9vw;}
+
+
+  canvas{width: 100%; height: 100%;
+    position: absolute;
+    bottom: -20%; left: 50%;
+    transform: translateX(-50%);}
+
+
+  .car_title_box .read_more{
+    display: flex;
+    position: absolute;
+    right: 0; bottom: 0;}
+
+  .car_title_box .read_more p{font-size: 1.5rem;
+    margin-right: 1rem;
+    line-height: 1rem;
+    margin-top: 0.3rem;}
+
+
+  /*read*/
+  .read{display: none;
+    position: absolute;
+    top: 1.5rem; left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 3rem); height: 93%;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 995;}
+  .read::-webkit-scrollbar{width: 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);}
+  .read::-webkit-scrollbar-thumb{background-color: #09203F;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 3px solid transparent;}
+  .read::-webkit-scrollbar-track{border-radius: 10px;}
+
+  .read span{font-size: 4vw; color: #fff; font-weight: normal;}
+  .read strong{font-size: 5.5vw; color: #fff;}
+  .back{display: none;}
+  .back_mo{display: block;
+    position: absolute;
+    right: 4%; bottom: 2%;}
+
+  .mo_read_more_bg{display: none;
+    width: 100%; height: 105%;
+    position: absolute;
+    top: 0.5rem; left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.5rem;
+    background-image: url(../images/ford\ mustang\ sub\ bg_mo_2.svg);
+    background-size: 100vw, 100vh;
+    background-position: left center;
+    background-repeat: no-repeat;}
+
+
+  .read.on{display: block;}
+  .mo_read_more_bg.on{display: block;}
+
+
+
+
+}
+
